@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>New York Times Search</title>
+    <!-- Boostrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="jumbotron">
+        <h1 class="display-3 text-center">New York Times Search</h1>
+    </div>
+    <!-- Forms -->
+    <div class="container">
+    	<div class="card">
+    		<div class="card-header">
+    		Search Parameters
+    		</div>
+    		<div class="card-body">
+        <form>
+            <div class="form-group">
+                <label for="searchTerm">Search Term</label>
+                <input type="search" class="form-control" id="searchTerm">
+            </div>
+            <div class="form-group">
+                <label for="numberRetrieve">Number of Records to Retrieve</label>
+                <input type="number" class="form-control" id="numberRetrieve" placeholder="0">
+            </div>
+            <div class="form-group">
+                <label for="startYear">Start Year (optional)</label>
+                <input type="search" class="form-control" id="startYear">
+            </div>
+            <div class="form-group">
+                <label for="endYear">End Year (optional)</label>
+                <input type="search" class="form-control" id="endYear">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-primary">Clear Search</button>
+        </form>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="search-results">
+        </div>
+    </div>
+</body>
+
+</html>
